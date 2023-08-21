@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #uname,#phone,#quantity,#cardname{
+        width: 200px;
+    }
+    #email{
+        width: 300px;
+    }
+    #items,#comment{
+        width: 400px;
+        height: 70px;
+    }
+    #address{
+        width: 500px;
+    }
+    #cvv,#expdate{
+        width: 100px;
+    }
+    #cardNo{
+        width: 400px;
+    }
+    .themail{
+        width: 300px;
+    } 
+
+</style>
+<body>
+    <header>
+        
+        <div class="nav">
+            <img src="images/logoNoBG.png" class="logo">
+            <ul>
+                <a href="index.html" ><li class="home"> Home </li></a>
+                <a href="Balloons.html" ><li class="balloon"> Balloons </li></a>
+                <a href="theme.html" ><li class="theme"> Theme Parties </li></a>
+                <a href="Candles.html" ><li class="candles"> Candles </li></a>
+                <a href="info.html" ><li class="info"> Order </li></a>
+        
+            </ul>
+        </div>
+    </header>
+    <div class="container-fluid" style="display: flex; ">
+        <div class="ordersbody col-md-6 col-sm-6 col-es-6 col-xl-6" style="justify-content: left;">
+            <h1 class="h1Order">Order</h1>
+            <label>Username</label>
+            <input type="text" placeholder="" id="uname">
+            <label>Email</label>
+            <input type="email" placeholder="" id="email">
+            <label>Phone Number</label>
+            <input type="number" placeholder="" id="phone">
+            <label>Items</label>
+            <input type="text" placeholder="" id="items">
+            <label>Quantity</label>
+            <input type="number" placeholder="" id="quantity">
+            <label>Comment</label>
+            <input type="text" placeholder="" id="comment">
+            <label>Address</label>
+            <input type="text" placeholder="" id="address">
+            <div class="payment col-md-6 col-sm-6 col-es-6 col-xl-6"  style="justify-content: right;">
+                <h5>Payment</h5>
+                <label>Name on Card</label>
+                <input type="text" placeholder="" id="cardname">
+                <label>Card Number</label>
+                <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX-XXXX" id="cardNo">
+                <label>Expire Date</label>
+                <input type="text" placeholder="MM/YYYY" id="expdate">
+                <label>CVV</label>
+                <input type="number" placeholder="" id="cvv">
+            </div>
+            
+            <button id="btn">Order</button>
+            <button id="saveBtn">Save Data</button>
+            <h1 class="h1receipt">Receipt</h1>
+            <table id="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th class="themail">Email</th>
+                    <th>Phone</th>
+                    <th>Items</th>
+                    <th>Quantity</th>
+                    <th>Comment</th>
+                    <th>Address</th>
+                    <th>Cancel</th>
+                    <th>Edit</th>
+                </tr>
+                <tbody id="tablee">
+                
+                </tbody>
+                
+
+            </table>
+        </div>
+
+    </div>
+    
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
